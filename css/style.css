@@ -1,0 +1,409 @@
+* {
+  box-sizing: border-box; }
+
+.navbar-container {
+  z-index: 2;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+  .navbar-container .navbar-li-left {
+    float: left;
+    font-family: 'Jura', sans-serif;
+    display: block;
+    font-weight: 200;
+    color: #30c0a0;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none; }
+
+  .navbar-container .navbar-li {
+    float: right;
+    font-family: 'Jura', sans-serif; }
+
+  .navbar-container .navbar-li .navbar-a {
+    font-family: 'Jura', sans-serif;
+    display: block;
+    font-weight: 200;
+    color: #30c0a0;
+    text-align: center;
+    padding: 0.875rem 1rem;
+    text-decoration: none; }
+
+  .navbar-container .navbar-li-left .navbar-a {
+    font-family: 'Jura', sans-serif;
+    display: block;
+    font-weight: 200;
+    color: #30c0a0;
+    text-align: center;
+    text-decoration: none; }
+
+  .navbar-container .navbar-li .navbar-a:hover {
+    background-color: #111;
+    color: #35c5a5; }
+
+.section {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+div.title-div {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 40vh;
+  left: 0vw;
+ }
+
+  div.title-div h1.name {
+    font-family: 'Jura', sans-serif;
+    font-size: 3.125em;
+    font-weight: 200;
+    color: #30c0a0;
+    position: relative;
+    -webkit-animation-name: title-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: title-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+
+@keyframes title-animation {
+  from {
+    color: rgba(0, 0, 0, 0); }
+  to {
+    color: #30c0a0; } }
+
+  div.title-div h1.job {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.875em;
+    font-weight: 200;
+    color: #30c0a0;
+    margin-bottom: 0.3125rem;
+    position: relative;
+    -webkit-animation-name: job-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: job-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+
+@keyframes job-animation {
+  from {
+    color: rgba(0, 0, 0, 0); }
+  to {
+    color: #30c0a0; } }
+
+  div.title-div .learn-more {
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    background-color: #222;
+    color: #30c0a0;
+    border: none;
+    position: relative;
+    -webkit-animation-name: learn-more-animation;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: learn-more-animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; }
+
+  div.title-div .learn-more:hover {
+    background-color: #111;
+    color: #30c0a0; }
+
+@keyframes learn-more-animation {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+#home {
+  background-image: url("../assets/images/abstract.jpg");
+  background-size: cover; }
+
+#about-me {
+  height: auto;
+  background: #000;
+  box-shadow: 2px 2px 6px 0px #30c0a0; }
+
+  #about-me .about-me-columns {
+    width: 100%;
+    margin: auto; }
+    
+  #about-me .section-title {
+    font-family: 'Jura', sans-serif;
+    font-size: 3.125em;
+    font-weight: 200;
+    border-bottom: 0.0625rem #30c0a0 solid;
+    padding-bottom: 3rem;
+    color: #30c0a0;
+    text-align: center; }
+
+  #about-me .section-title-interests {
+    font-family: 'Jura', sans-serif;
+    font-size: 2.125em;
+    font-weight: 200;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #30c0a0;
+    text-align: center; }
+    
+  #about-me .image-of-me {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 30px;
+    margin: 1.25rem auto;
+    background-image: url("../assets/images/portrait.jpg");
+    background-color: #000;
+    border: 2px #30c0a0 solid; }
+    
+  #about-me .about-me-text {
+    font-family: 'Jura', sans-serif;
+    color: #30c0a0;
+    font-size: 1.25rem;
+    font-weight: 300; }
+
+#skills {
+  background-image: url("../assets/images/abstract.jpg");
+  background-size: cover;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  }
+  
+  #skills .section-title {
+    font-family: 'Jura', sans-serif;
+    color: #30c0a0;
+    font-size: 3.125em;
+    font-weight: 200;
+    border-bottom: 0.0625rem #30c0a0 solid;
+    padding-bottom: 3rem;
+    text-align: center; }
+    
+  #skills .skills-wrap {
+    margin-top: 1.25rem;
+    margin-bottom: 2.625rem; }
+
+  
+    
+  #skills .skills-sub-group {
+    font-family: 'Jura', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #30c0a0;
+    margin-top: 2rem; }
+    
+  #skills .skills-icon-div {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    
+    #skills .skills-icon-div .skills-icon {
+      font-size: 5.75rem;
+      color: #30c0a0;
+      align-items: center;
+      margin: auto;
+      margin-bottom: 10px; }
+
+    #github-wordmark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    #github-wordmark #github-icon {
+      font-size: 4.75rem;
+    }
+
+    #github-wordmark #github-name {
+      color: #30c0a0;
+      margin-top: -10px;
+      user-select: none
+
+    }
+
+#portfolio {
+  height: auto;
+  background: #000;
+  box-shadow: 2px 2px 6px 0px #30c0a0; }
+  
+  #portfolio .section-title {
+    font-family: 'Jura', sans-serif;
+    font-size: 3.125em;
+    font-weight: 200;
+    border-bottom: 0.0625rem #30c0a0 solid;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    color: #30c0a0;
+    text-align: center; }
+    
+  #portfolio .project-wrap {
+    margin: auto; }
+    
+    #portfolio .project-wrap .project-column {
+      background-color: #111;
+      color: black;
+      border: 0.0625 rem black solid;
+      height: 15rem;
+      width: 24%;
+      margin: 0.625rem auto;
+      padding: 0; }
+      
+      #portfolio .project-wrap .project-column .git-div {
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-left: 0.625rem; }
+        
+      #portfolio .project-wrap .project-column .link-div {
+        font-size: 1.2em;
+        font-weight: 400;
+        padding-left: 0.625rem; }
+        
+  #portfolio #project-one {
+    background-image: url("../assets/images/asteroids.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 1%;
+    border: 0.0625rem solid #30c0a0; }
+    
+  #portfolio #project-two {
+    background-image: url("../assets/images/library.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 1%;
+    border: 0.0625rem solid #30c0a0; }
+    
+  #portfolio #project-three {
+    background-image: url("../assets/images/discognt.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 1%;
+    border: 0.0625rem solid #30c0a0; }
+    
+  #portfolio #project-four {
+    /* background-image: url("../assets/images/bills.gif"); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 1%;
+    border: 0.0625rem solid #30c0a0; }
+
+.descr-prompt {
+  font-family: 'Jura', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #30c0a0;
+  margin-bottom: 1rem;
+}
+
+.hover-div {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  overflow: auto;
+  color: #30c0a0;
+  font-family: 'Jura', sans-serif;
+  border-radius: 1%;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px; 
+  opacity: 0}
+
+  .show-description {
+    opacity: 1;
+  }
+  
+  .hover-div .project-title {
+    font-size: 20px;
+    font-weight: 600; }
+    
+  .hover-div .project-link {
+    color: #30c0a0;
+    background-color: #222;
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Jura', sans-serif; }
+    
+  .hover-div .project-link:hover {
+    color: #30c0a0;
+    background-color: rgb(7, 16, 36);
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Jura', sans-serif; }
+    
+  .hover-div .project-description {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 15px; }
+
+#contact {
+  box-shadow: 2px 2px 6px 0px #30c0a0;
+  background-image: url("../assets/images/abstract.jpg");
+  background-size: cover;
+  height: 75vh; }
+  
+  #contact .section-title {
+    font-family: 'Jura', sans-serif;
+    font-size: 3.125em;
+    font-weight: 200;
+    border-bottom: 0.0625rem #30c0a0 solid;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    color: #30c0a0;
+    text-align: center; }
+    
+  #contact .contact-div {
+    font-family: 'Jura', sans-serif;
+    color: #30c0a0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    width: 80%;
+    margin: auto; }
+    
+    #contact .contact-div .contact-text {
+      margin-bottom: 1.5625rem; }
+      
+    #contact .contact-div .button {
+      background-color: #222;
+      color: #30c0a0;
+      border: none; }
+      
+    #contact .contact-div .button:hover {
+      background-color: #111; }
+
+#footer {
+  
+  height: 60px;
+  background-color: #222;
+  padding: 0; }
+  
+  #footer .footer-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 0.3125rem; }
+    
+    #footer .footer-div .contact-info {
+      color: #30c0a0;
+      font-size: 3.125em; }
+  
+    #footer .footer-div .copyright {
+      font-family: 'Jura', sans-serif;
+      color: #30c0a0;
+      text-align: center;
+      margin: auto 0 auto 0;
+    }
+
